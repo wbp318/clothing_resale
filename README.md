@@ -11,6 +11,7 @@ Online clothing resale business (vintage sports, men's, women's): cheap sourcing
 | [docs/05-launch-checklist.md](docs/05-launch-checklist.md) | 30-day plan from zero to first 100 listings |
 | [docs/06-pricing-and-grading.md](docs/06-pricing-and-grading.md) | Condition grading, spotting real vintage, pricing comps |
 | [docs/07-automation.md](docs/07-automation.md) | Automatic sale detection: eBay API sync, Gmail sale-email watcher, crosslister option |
+| [docs/08-sell-fast.md](docs/08-sell-fast.md) | Turnover playbook: avoiding ad fees, fastest channels, staleness schedule |
 | [banking/business-plan.md](banking/business-plan.md) | Full business plan with projections, Gantt and process charts |
 | [banking/delta-bank-loan.md](banking/delta-bank-loan.md) | How to get a small loan from Delta Bank, packet checklist |
 
