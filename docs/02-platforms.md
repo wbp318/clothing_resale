@@ -18,7 +18,7 @@ Fees as reported Oct 2026. Confirm on each platform's official fee page before p
 1. **eBay** = anchor for men's, sports, and anything over $50. Highest prices, best search traffic.
 2. **Depop** = second listing for every tee, crewneck, jacket, and all women's vintage under $100. Near-zero fees.
 3. **Poshmark** = women's contemporary brands. The 20% fee is worth it because that is where those buyers are. Share your closet daily; it drives visibility.
-4. **Vinted** = free third listing for everything under $40, especially women's. Zero seller fees and the buyer pays shipping, so even low-dollar pieces net full price. Vinted buyers do not expect the SKU-in-description trick to hurt; add it like everywhere else.
+4. **Vinted** = free third listing for everything under $40, especially women's. Zero seller fees and the buyer pays shipping, so even low-dollar pieces net full price. Put the SKU in the description like everywhere else.
 5. **Whatnot** = clearance. One show a week to blow out everything unsold at 60 days. Start bids at $5–$10, not $1.
 6. **Grailed** = only menswear $75+ from brands those buyers know.
 
