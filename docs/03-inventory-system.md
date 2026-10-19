@@ -9,7 +9,7 @@ Format: `CR-0001`, `CR-0002`, ... (zero-padded). The script in `tools/inv.py` as
 - Write the SKU on a masking tape tag or hang tag on the item.
 - Put the SKU in the listing on every platform:
   - eBay: "Custom label (SKU)" field
-  - Depop / Poshmark / Grailed / Mercari: last line of the description
+  - Depop / Poshmark / Vinted / Grailed / Mercari: last line of the description
   - Whatnot: item title or notes
 - Store items in numbered bins. The CSV's `location` column says which bin.
 
@@ -43,10 +43,10 @@ Manual works to ~100 active listings. Past that, pay for a crosslister. They cop
 
 | Tool | Approx price | Auto-delist | Notes |
 |---|---|---|---|
-| **Vendoo** | free (5 items), Starter ~$12–15/mo | Yes on Starter | Easiest; eBay/Depop/Poshmark/Mercari/Grailed/Whatnot. Good first pick. |
+| **Vendoo** | free (5 items), Starter ~$12–15/mo | Yes on Starter | Easiest; eBay/Depop/Poshmark/Mercari/Grailed/Whatnot. No Vinted. Good first pick. |
 | **Flyp** | free 100 days, then ~$9/mo | Yes | Cheapest. Poshmark, eBay, Mercari, Depop. |
 | **List Perfectly** | ~$29/mo | Higher tier | Strong for eBay-heavy sellers |
-| **Crosslist** | ~$30–45/mo | Higher tiers only | Depop needs browser open |
+| **Crosslist** | ~$30–45/mo | Higher tiers only | Depop needs browser open; supports Vinted |
 | **Voolist** | ~$20/mo | Yes | No Mercari yet |
 
 Recommendation: start manual with the CSV, add **Vendoo Starter** at 100 listings. Keep the CSV regardless: no crosslister tracks cost, bin location, or profit well, and you want the data outside any subscription.

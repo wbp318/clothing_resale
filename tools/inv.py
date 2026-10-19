@@ -24,7 +24,7 @@ FIELDS = [
     "cost", "list_price", "listed_on", "location", "status",
     "sold_platform", "sold_price", "sold_date", "fees", "shipping_cost", "notes",
 ]
-PLATFORMS = {"ebay", "depop", "whatnot", "grailed", "mercari", "poshmark", "instagram", "other"}
+PLATFORMS = {"ebay", "depop", "whatnot", "grailed", "mercari", "poshmark", "vinted", "instagram", "other"}
 PREFIX = "CR"
 
 

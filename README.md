@@ -10,6 +10,7 @@ Online clothing resale business (vintage sports, men's, women's): cheap sourcing
 | [docs/04-shipping-usps.md](docs/04-shipping-usps.md) | USPS service picks, packaging, and label workflow |
 | [docs/05-launch-checklist.md](docs/05-launch-checklist.md) | 30-day plan from zero to first 100 listings |
 | [docs/06-pricing-and-grading.md](docs/06-pricing-and-grading.md) | Condition grading, spotting real vintage, pricing comps |
+| [docs/07-automation.md](docs/07-automation.md) | Automatic sale detection: eBay API sync, Gmail sale-email watcher, crosslister option |
 | [banking/business-plan.md](banking/business-plan.md) | Full business plan with projections, Gantt and process charts |
 | [banking/delta-bank-loan.md](banking/delta-bank-loan.md) | How to get a small loan from Delta Bank, packet checklist |
 
@@ -25,6 +26,7 @@ python tools/inv.py list                          # everything in stock, flags 6
 python tools/inv.py sold CR-0001 ebay 79.99       # marks sold, tells you where to delist
 python tools/inv.py ship CR-0001 6.40             # record shipping cost
 python tools/inv.py report                        # revenue, COGS, fees, profit, sell-through
+python tools/sync_ebay.py                         # auto-mark eBay sales sold (see docs/07)
 ```
 
 Open the CSV in Excel or Google Sheets any time. The script only keeps it consistent. Python 3.8+, no dependencies.

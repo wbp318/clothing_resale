@@ -3,7 +3,7 @@
 ## Week 1: Setup
 - [ ] Pick a brand name and handle; grab it on eBay, Depop, Poshmark, Whatnot, Instagram
 - [ ] eBay: business account, link bank, 30-day returns (buyer pays return shipping), 1-day handling
-- [ ] Depop and Poshmark seller accounts, bios linking Instagram
+- [ ] Depop, Poshmark, and Vinted seller accounts, bios linking Instagram
 - [ ] Whatnot: apply as seller (approval takes a few days)
 - [ ] Pirate Ship account linked to USPS account
 - [ ] Gear: kitchen scale, poly mailers (100), tape, hang tags, 5 numbered bins, phone tripod, neutral backdrop
@@ -20,7 +20,7 @@
 
 ## Week 3: List
 - [ ] 75+ listings live on eBay
-- [ ] Same on Depop; women's contemporary also on Poshmark
+- [ ] Same on Depop; women's contemporary also on Poshmark; everything under $40 also on Vinted
 - [ ] Auto-accept offers at 85% of ask
 - [ ] Post best 5 pieces on Instagram
 
