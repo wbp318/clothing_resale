@@ -60,3 +60,19 @@ Recommendation: start manual with the CSV, add **Vendoo Starter** at 100 listing
 - **Sunday:** `git add inventory && git commit -m "inventory week of ..."`.
 
 Sources: [cross-listing apps 2026](https://www.voolist.com/blog/best-cross-listing-apps-2026), [Vendoo pricing](https://www.nifty.ai/post/vendoo-pricing), [reseller inventory tools](https://resident.com/technology-and-digital-resources/2026/10/16/12-inventory-management-software-tools-for-resellers-in-2026-sorted-by-type).
+
+## 6. When it sells twice anyway (double sale)
+
+1. **Ship to whoever paid first.** Timestamp decides.
+2. **Cancel the second order within the hour.** Reason: "item out of stock," never "buyer requested."
+3. **Message the second buyer:** sorry, it sold elsewhere minutes earlier, full refund is on its way, 10% off anything else. Most shrug it off.
+4. Run `inv.py sold` for the platform that shipped and delist everywhere else immediately.
+
+| Platform | Cost of a cancellation |
+|---|---|
+| eBay | One "defect." Harmless once or twice; over ~2% of transactions in 12 months loses Top Rated and search rank. Fees refund automatically. |
+| Depop, Vinted, Mercari | Refund, no lasting penalty unless repeated. Vinted may show a cancellation count. |
+| Poshmark | Cancel before shipping; small rating ding only if repeated. |
+| Whatnot | Real hit to seller standing and buyers saw it live. **Never put a cross-listed item in a show.** Delist everywhere the morning of. |
+
+The window is the minutes between the first sale and your delisting. Push notifications on every app, delist before you pack, and a crosslister with auto-delist (Vendoo or Flyp) shrink it to near zero. Auto-delist is the real reason to pay for one.
