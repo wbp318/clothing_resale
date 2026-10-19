@@ -1,0 +1,20 @@
+# Line endings
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+
+# Make GitHub Linguist count every file type in the language bar.
+# By default it hides Markdown (prose), CSV (data), and config files.
+*.md    linguist-detectable=true linguist-documentation=false
+*.csv   linguist-detectable=true linguist-language=CSV
+*.py    linguist-detectable=true
+*.toml  linguist-detectable=true
+*.yml   linguist-detectable=true
+*.yaml  linguist-detectable=true
+*.json  linguist-detectable=true
+*.txt   linguist-detectable=true linguist-language=Text
+.gitattributes linguist-detectable=true linguist-language="Git Attributes"
+.gitignore     linguist-detectable=true linguist-language="Ignore List"
+docs/**   linguist-documentation=false
+banking/** linguist-documentation=false
