@@ -42,3 +42,30 @@ Default: **Ground Advantage for everything**, check Priority Flat Rate only when
 - Ship within 1 business day. Handling time is a ranking factor.
 
 Sources: [Ground Advantage vs Priority 2026](https://www.ship.com/post/usps-ground-advantage-vs-priority-mail-2026), [Shippo Ground Advantage guide](https://goshippo.com/blog/usps-parcel-select-ground-cost-sizes-and-how-it-works), [2026 rate changes](https://shippinglabel.co/blog/usps-ground-advantage-vs-priority-mail).
+
+## Picking the service
+
+```mermaid
+flowchart TD
+    W{Weight} -->|under 16 oz| GA[USPS Ground Advantage<br/>poly mailer]
+    W -->|1 to 4 lb, jacket or bundle| GA2[Ground Advantage<br/>or Priority if buyer paid for speed]
+    W -->|over 4 lb, bulk lots| PF[Priority flat rate box]
+    GA & GA2 & PF --> L[Buy label at home<br/>USPS business account or platform label]
+    L --> D[Drop at USPS or schedule pickup]
+    D --> T[Paste tracking into platform]
+    T --> S[python tools/inv.py ship SKU cost]
+```
+
+## Daily shipping loop
+
+```mermaid
+journey
+    title One shipping day
+    section Morning
+      Check sales on all platforms: 4: You
+      Print labels: 5: You
+      Pack and tape: 4: You
+    section Afternoon
+      Drop at USPS Monroe: 3: You
+      Log shipping cost: 5: You
+```

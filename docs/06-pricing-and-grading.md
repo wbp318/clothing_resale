@@ -46,3 +46,28 @@
 - Day 30 unsold: drop 10%.
 - Day 60: drop 15% more or send to Whatnot show.
 - Day 90: Whatnot, bundle, or donate (log as `donated` to track the loss).
+
+## Grade and price in under two minutes
+
+```mermaid
+flowchart TD
+    A[Item in hand] --> S{Single stitch?}
+    S -->|yes| V[Likely pre-late-90s]
+    S -->|no| M[Modern or reprint]
+    V & M --> T{Tag on the list?<br/>Starter, Nutmeg, Salem, Logo 7}
+    T -->|yes| B[Pull brand comps]
+    T -->|no| G[Pull generic comps by graphic]
+    B & G --> F{Flaws?}
+    F -->|none| EX[Excellent: price at 50th pct of sold]
+    F -->|minor| GD[Good: price at 25th pct, photo every flaw]
+    F -->|heavy| TH[Thrashed: bundle or Whatnot]
+```
+
+## Price ladder by platform
+
+```mermaid
+flowchart LR
+    C[eBay sold comps<br/>25th percentile] --> E[eBay: comp price]
+    C --> D[Depop / Vinted: 20% lower]
+    C --> P[Poshmark: comp plus 15%<br/>to absorb offers]
+```

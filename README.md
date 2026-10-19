@@ -31,3 +31,56 @@ python tools/sync_ebay.py                         # auto-mark eBay sales sold (s
 ```
 
 Open the CSV in Excel or Google Sheets any time. The script only keeps it consistent. Python 3.8+, no dependencies.
+
+## Repo map
+
+```mermaid
+flowchart TD
+    subgraph Resale business
+        D[docs/01 to 08<br/>playbooks] --> T[tools/<br/>inv.py, sync_ebay.py, gmail watcher]
+        T --> I[(inventory/inventory.csv)]
+        B[banking/<br/>business plan, Delta Bank loan]
+    end
+    subgraph New income streams
+        K[book/<br/>KDP guide outline] 
+        M[monetization/<br/>paid APIs behind Cloudflare Monetization Gateway]
+    end
+    D --> K
+    D & I --> M
+```
+
+## Income streams and how they feed each other
+
+```mermaid
+flowchart LR
+    R[Clothing resale<br/>cash now] -->|real numbers and tags| K[KDP book<br/>slow, compounding]
+    R -->|logged sales and tags| M[Paid APIs<br/>zero inventory]
+    K -->|readers| R
+    M -->|better comps| R
+    K -.->|paid page crawls| M
+```
+
+## Other folders
+
+| Folder | What it covers |
+|---|---|
+| [book/outline.md](book/outline.md) | 16-chapter KDP book drafted from these docs, with writing schedule |
+| [monetization/README.md](monetization/README.md) | Paid API plan: Cloudflare Monetization Gateway, x402, Worker skeleton, revenue math |
+| [tools/README.md](tools/README.md) | How the three scripts fit together |
+| [inventory/README.md](inventory/README.md) | CSV schema |
+
+## Day in the life
+
+```mermaid
+journey
+    title A normal day
+    section Morning
+      Check sales, print labels: 5: You
+      Ship at USPS: 3: You
+    section Midday
+      Thrift or photograph: 4: You
+      List 5 items on 3 platforms: 4: You
+    section Evening
+      Send offers, log in inv.py: 5: You
+      Write one book section or one API route: 3: You
+```

@@ -43,3 +43,26 @@ The goal is money doubling every 45 days, not the maximum price on any one item.
 - Middle: everything stale, $5–$8 starts.
 - Last 10: bundles and "mystery" lots.
 - Ship everything the next morning in one USPS pickup.
+
+## Staleness schedule
+
+```mermaid
+timeline
+    title Every listing, from day 0
+    Day 0 : List on eBay, Depop, Vinted same day
+    Day 7 : Send 10 to 15% offer to all watchers
+    Day 14 : Drop price 10%, refresh photos
+    Day 21 : Drop another 10%, add to bundle deal
+    Day 45 : Whatnot clearance or local Marketplace
+    Day 60 : Donate or lot it out, free the bin
+```
+
+## Turnover beats margin
+
+```mermaid
+flowchart LR
+    A[$6 tee] -->|sold in 1 week at $28| B[$22 profit]
+    B -->|reinvest| C[3 more tees]
+    C -->|week 3| D[$66 profit]
+    A2[$6 tee] -->|held 5 months for $40| B2[$34 profit, once]
+```

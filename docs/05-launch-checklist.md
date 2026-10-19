@@ -34,3 +34,35 @@
 - Register an LLC with the Louisiana Secretary of State via geauxBIZ (~$100 filing). Needed for a business bank account and loan.
 - Louisiana sales tax: register with LDR via LaTAP. Marketplaces collect and remit for you, but you still file (often $0) returns.
 - Track every expense (mileage to bins counts). Platforms issue a 1099-K; the CSV cost column is your deduction record.
+
+## 30-day launch timeline
+
+```mermaid
+gantt
+    title Zero to first 100 listings
+    dateFormat  YYYY-MM-DD
+    section Setup
+    Accounts, USPS, photo corner      :a1, 2026-10-19, 3d
+    First $85 lot ordered              :milestone, a2, 2026-10-19, 0d
+    section Inventory
+    Lot arrives, grade and photograph  :b1, 2026-10-24, 2d
+    List 10 tees on 3 platforms        :b2, after b1, 1d
+    Goodwill half-off run x2           :b3, after b2, 7d
+    List to 50                         :b4, after b3, 7d
+    List to 100                        :b5, after b4, 10d
+    section Money
+    First sales and shipping           :c1, after b2, 14d
+    Reload with first $300             :c2, after c1, 3d
+```
+
+## Daily loop once live
+
+```mermaid
+flowchart LR
+    A[Morning: check sales] --> B[Pack and ship]
+    B --> C[Photograph 5 new items]
+    C --> D[List on 3 platforms]
+    D --> E[Send offers to watchers]
+    E --> F[Log in inv.py]
+    F --> A
+```

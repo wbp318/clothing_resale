@@ -77,3 +77,25 @@ Rule of thumb: a bale or pallet yields roughly a third "good" (list immediately)
 | **Total** | **~$550** | **100–150** | **~$4.50** |
 
 Sources: [Closo supplier lots](https://closo.co/tools/closo/lot/1900143210), [Thrift Vintage Fashion guide](https://thriftvintagefashion.com/blogs/news/best-wholesale-vintage-clothing-suppliers-in-the-us-2026), [LA Vintage](https://lavintage.com/collections/unisex), [Vintage Supplier](https://vintagesupplier.com/wholesale-vintage-sportswear/), [reselling vendors 2026](https://www.voolist.com/blog/best-reselling-vendors-2026), [Via Trading](https://www.viatrading.com/), [clothing liquidation companies](https://www.upliquidation.com/clothing-liquidation/), [Goodwill bins guide](https://closo.co/blogs/beginner-guides-how-tos/goodwill-bins-where-to-find-the-best-stuff-2025-reseller-s-guide), [sold by the pound](https://closo.co/blogs/inventory-liquidation/sold-by-the-pound).
+
+## Sourcing decision flow
+
+```mermaid
+flowchart TD
+    S[Need inventory] --> B{Cash on hand?}
+    B -->|under $100| L[Thrift Vintage Fashion 10-pc lot<br/>or Goodwill half-off day]
+    B -->|$100 to $400| W[Wholesale lots: tees, sweatshirts<br/>plus Marketplace lots]
+    B -->|$400 plus| BA[Split a 100 lb bale<br/>or Shreveport / Jackson bins trip]
+    L & W & BA --> C{Check eBay sold comps<br/>on 3 sample items}
+    C -->|avg sold over 3x cost| BUY[Buy]
+    C -->|no| PASS[Pass, try next source]
+    BUY --> LOG[python tools/inv.py add]
+```
+
+## Source tiers by cost per piece
+
+```mermaid
+flowchart LR
+    T1[Tier 1 wholesale lots<br/>$6 to $16 per piece<br/>fast, graded] --> T2[Tier 2 bales and bins<br/>$1 to $4 per piece<br/>time and travel]
+    T2 --> T3[Tier 3 local: Goodwill, estate sales,<br/>Marketplace lots<br/>$2 to $8 per piece, best margins]
+```

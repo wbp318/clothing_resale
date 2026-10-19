@@ -72,3 +72,46 @@ Then record it in the master CSV: `python tools/inv.py sold CR-0042 depop 79`. (
 1. Month 1 (under 100 listings): manual CSV + email watcher. Free.
 2. Add the eBay sync as soon as you have 20+ eBay listings. Free.
 3. At 100+ listings: Vendoo or Flyp for auto-delist. Keep the CSV for profit tracking.
+
+## How sales get detected
+
+```mermaid
+flowchart LR
+    subgraph eBay
+        EO[eBay order] --> API[Sell Fulfillment API]
+        API --> SY[tools/sync_ebay.py<br/>every 30 min]
+    end
+    subgraph Others
+        DE[Depop / Posh / Vinted / Whatnot sale] --> EM[Sale email]
+        EM --> GS[tools/gmail_sales_watcher.gs<br/>every 10 min]
+        GS --> SI[sales_inbox tab]
+        GS --> RM[DELIST reminder email]
+    end
+    SY --> CSV[(inventory/inventory.csv)]
+    SI -.manual paste weekly.-> CSV
+```
+
+## eBay sync sequence
+
+```mermaid
+sequenceDiagram
+    participant S as sync_ebay.py
+    participant T as eBay OAuth
+    participant O as eBay Orders API
+    participant I as inv.py
+    S->>T: refresh token to access token
+    S->>O: GET orders, last 7 days
+    O-->>S: orders with Custom label SKU
+    loop each order
+        S->>I: sold(SKU, ebay, price, fees)
+    end
+    S-->>S: print unmatched SKUs
+```
+
+## Which tier to use
+
+```mermaid
+flowchart TD
+    N{Active listings} -->|under 100| F[Tier 2 and 3: free scripts]
+    N -->|100 plus| V[Tier 1: Vendoo or Flyp<br/>keep the CSV for profit]
+```

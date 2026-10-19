@@ -32,3 +32,26 @@ Fees as reported Oct 2026. Confirm on each platform's official fee page before p
 - **Put the SKU in every listing** (end of description, or eBay's custom label field). This is what makes cross-platform tracking work.
 
 Sources: [Vinted USA 2026 guide](https://closo.co/blogs/platform-specific-guides/vinted-usa-2026-your-complete-guide-to-the-zero-fee-clothes-marketplace), [Vinted fee calculator](https://vendoo.co/vinted-fee-calculator), [Vinted US reseller guide](https://margeoapp.com/en/blog/vinted-usa-reseller-guide-2026/).
+
+## Where each item goes
+
+```mermaid
+flowchart TD
+    I[New item] --> C{Category}
+    C -->|vintage sports, mens| E[eBay + Depop + Vinted]
+    C -->|womens, Y2K| P[Poshmark + Depop + Vinted]
+    C -->|streetwear, designer| G[Grailed + eBay]
+    C -->|flawed, stale 60+ days| W[Whatnot bundle or Marketplace local]
+    E & P & G & W --> SKU[Same SKU on every listing]
+```
+
+## Where $40 goes on an eBay sale
+
+```mermaid
+pie title $40 eBay sale, $8.50 item cost
+    "Final value fee 13.6%" : 5.44
+    "Per-order fee" : 0.30
+    "USPS Ground Advantage" : 5.60
+    "Item cost" : 8.50
+    "Your profit" : 20.16
+```

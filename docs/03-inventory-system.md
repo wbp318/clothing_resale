@@ -76,3 +76,32 @@ Sources: [cross-listing apps 2026](https://www.voolist.com/blog/best-cross-listi
 | Whatnot | Real hit to seller standing and buyers saw it live. **Never put a cross-listed item in a show.** Delist everywhere the morning of. |
 
 The window is the minutes between the first sale and your delisting. Push notifications on every app, delist before you pack, and a crosslister with auto-delist (Vendoo or Flyp) shrink it to near zero. Auto-delist is the real reason to pay for one.
+
+## Item lifecycle
+
+```mermaid
+stateDiagram-v2
+    [*] --> draft : inv.py add
+    draft --> listed : inv.py listed SKU platforms
+    listed --> sold : inv.py sold SKU platform price
+    sold --> shipped : inv.py ship SKU cost
+    listed --> returned : buyer return
+    returned --> listed : relist
+    listed --> donated : stale, no bids
+    shipped --> [*]
+    donated --> [*]
+```
+
+## Double-sale prevention
+
+```mermaid
+sequenceDiagram
+    participant B as Buyer on Depop
+    participant G as Gmail watcher
+    participant Y as You
+    participant E as eBay / Vinted
+    B->>G: Depop sale email (SKU CR-0042 in body)
+    G->>Y: DELIST reminder: also listed on ebay, vinted
+    Y->>E: end listings within the hour
+    Y->>Y: python tools/inv.py sold CR-0042 depop 28
+```

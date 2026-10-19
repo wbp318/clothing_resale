@@ -1,0 +1,15 @@
+name = "resale-api"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "resale"
+database_id = "PASTE-D1-ID"
+
+[[kv_namespaces]]
+binding = "TABLES"
+id = "PASTE-KV-ID"
+
+[vars]
+FREE_ROUTES = "/health,/openapi.json"
