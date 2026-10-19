@@ -14,7 +14,7 @@
 *.yaml  linguist-detectable=true
 *.json  linguist-detectable=true
 *.txt   linguist-detectable=true linguist-language=Text
-.gitattributes linguist-detectable=true linguist-language="Git Attributes"
-.gitignore     linguist-detectable=true linguist-language="Ignore List"
+.gitattributes linguist-detectable=true linguist-language=Git-Attributes
+.gitignore     linguist-detectable=true linguist-language=Ignore-List
 docs/**   linguist-documentation=false
 banking/** linguist-documentation=false
